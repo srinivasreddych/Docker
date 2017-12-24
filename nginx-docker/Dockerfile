@@ -1,4 +1,4 @@
-FROM centos:centos6
+FROM centos:latest
 MAINTAINER srinivasreddych@outlook.com
 RUN yum update -y && \
     yum install epel-release -y && \
@@ -8,4 +8,4 @@ RUN yum update -y && \
 
 ENV PATH /usr/local/nginx/bin:$PATH
 EXPOSE 80
-CMD service nginx start
+CMD ["nginx"]
