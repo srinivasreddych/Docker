@@ -1,1 +1,3 @@
-Replacing existing nginx.conf with customized line
+#### Running nginx in foreground. 
+
+## Will be adding nginx with ssl soon
