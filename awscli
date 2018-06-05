@@ -1,0 +1,8 @@
+FROM centos
+RUN mkdir /app
+RUN yum update -y && \
+    curl -O https://bootstrap.pypa.io/get-pip.py && \
+    python get-pip.py && \
+    pip install awscli && \
+    chmod 755 /usr/bin/aws*
+ENTRYPOINT /bin/sh
