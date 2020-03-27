@@ -1,12 +1,12 @@
 apiVersion: appmesh.k8s.aws/v1beta1
 kind: VirtualService
 metadata:
-  name: my-svc-a
-  namespace: my-namespace
+  name: colorteller.appmesh-system
+  namespace: appmesh-system
 spec:
-  meshName: my-mesh
+  meshName: color-mesh
   routes:
-    - name: route-to-svc-a
+    - name: color-route
       http:
         match:
           prefix: /
