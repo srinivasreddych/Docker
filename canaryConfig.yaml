@@ -1,0 +1,18 @@
+apiVersion: appmesh.k8s.aws/v1beta1
+kind: VirtualService
+metadata:
+  name: my-svc-a
+  namespace: my-namespace
+spec:
+  meshName: my-mesh
+  routes:
+    - name: route-to-svc-a
+      http:
+        match:
+          prefix: /
+        action:
+          weightedTargets:
+            - virtualNodeName: my-app-a
+              weight: 100
+            - virtualNodeName: my-app-a
+              weight: 0
