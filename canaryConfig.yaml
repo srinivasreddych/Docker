@@ -12,7 +12,7 @@ spec:
           prefix: /
         action:
           weightedTargets:
-            - virtualNodeName: my-app-a
+            - virtualNodeName: colorteller-1
               weight: 100
-            - virtualNodeName: my-app-a
+            - virtualNodeName: colorteller-2
               weight: 0
