@@ -12,7 +12,7 @@ spec:
           prefix: /
         action:
           weightedTargets:
-            - virtualNodeName: colorteller-1
+            - virtualNodeName: colorteller-1-appmesh-system
               weight: 100
-            - virtualNodeName: colorteller-2
+            - virtualNodeName: colorteller-2-appmesh-system
               weight: 0
